@@ -1,53 +1,14 @@
 <template>
   <div id="overview" class="container grid-lg">
     <div class="columns">
-      <div class="column col-2 col-md-4 col-sm-6 col-xs-12">
-        <div class="card color1">
+      <div class="column col-2 col-md-4 col-sm-6 col-xs-12" v-for="(card, index) in cards"
+           :key="`card${index}`">
+        <div :class="index % 2 === 0 ? 'card color1':'card color2'">
           <div class="card-image">
-            <font-awesome-icon icon="award" size="4x"/>
+            <font-awesome-icon :icon="card.icon" size="4x"/>
           </div>
           <div class="card-header">
-            <div class="card-title h6">{{ $t('standards') }}</div>
-          </div>
-        </div>
-      </div>
-      <div class="column col-2 col-md-4 col-sm-6 col-xs-12">
-        <div class="card color2">
-          <div class="card-image">
-            <font-awesome-icon icon="tablet-alt" size="4x"/>
-          </div>
-          <div class="card-header">
-            <div class="card-title h6">{{ $t('tools') }}</div>
-          </div>
-        </div>
-      </div>
-      <div class="column col-2 col-md-4 col-sm-6 col-xs-12">
-        <div class="card color1">
-          <div class="card-image">
-            <font-awesome-icon icon="graduation-cap" size="4x"/>
-          </div>
-          <div class="card-header">
-            <div class="card-title h6">{{ $t('education') }}</div>
-          </div>
-        </div>
-      </div>
-      <div class="column col-2 col-md-4 col-sm-6 col-xs-12">
-        <div class="card color2">
-          <div class="card-image">
-            <font-awesome-icon icon="project-diagram" size="4x"/>
-          </div>
-          <div class="card-header">
-            <div class="card-title h6">{{ $t('projects') }}</div>
-          </div>
-        </div>
-      </div>
-      <div class="column col-2 col-md-4 col-sm-6 col-xs-12">
-        <div class="card color1">
-          <div class="card-image">
-            <font-awesome-icon icon="users" size="4x"/>
-          </div>
-          <div class="card-header">
-            <div class="card-title h6">{{ $t('cooperation') }}</div>
+            <div class="card-title h6">{{ $t(card.langKey) }}</div>
           </div>
         </div>
       </div>
@@ -67,7 +28,33 @@
 
 <script>
 export default {
-  name: 'Overview'
+  name: 'Overview',
+  data() {
+    return {
+      cards: [
+        {
+          langKey: 'standards',
+          icon: 'award',
+        },
+        {
+          langKey: 'tools',
+          icon: 'tablet-alt',
+        },
+        {
+          langKey: 'education',
+          icon: 'graduation-cap',
+        },
+        {
+          langKey: 'projects',
+          icon: 'project-diagram',
+        },
+        {
+          langKey: 'cooperation',
+          icon: 'users',
+        }
+      ]
+    };
+  }
 }
 </script>
 
