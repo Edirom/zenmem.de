@@ -34,10 +34,10 @@
         <div class="footer-zenmem"><router-link to="/home">{{ $t('ZenMEM_abbr') }}<br/>{{ $t('ZenMEM') }}</router-link></div>
       </div>
       <div class="footer-third">
-        <img id="footer-vife" src="./assets/pix/ViFE-logo-969x510-trans.png" :alt="$t('ViFE')"/>
+        <a href="https://edirom.de" target="_blank"><img id="footer-vife" src="./assets/pix/ViFE-logo-969x510-trans.png" :alt="$t('ViFE')"/></a>
       </div>
       <div class="footer-third">
-        <img id="footer-upb" src="./assets/pix/upb-logo_rgb.png" :alt="$t('UPB')"/>
+        <a href="https://uni-paderborn.de" target="_blank"><img id="footer-upb" src="./assets/pix/upb-logo_rgb.png" :alt="$t('UPB')"/></a>
       </div>
     </footer>
   </div>
