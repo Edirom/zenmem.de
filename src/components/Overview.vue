@@ -3,24 +3,28 @@
     <div class="columns">
       <div class="column col-2 col-md-4 col-sm-6 col-xs-12" v-for="(card, index) in cards"
            :key="`card${index}`">
-        <div :class="index % 2 === 0 ? 'card color1':'card color2'">
-          <div class="card-image">
-            <font-awesome-icon :icon="card.icon" size="4x"/>
+        <router-link :to="'/' + card.langKey">
+          <div :class="index % 2 === 0 ? 'card color1':'card color2'">
+            <div class="card-image">
+              <font-awesome-icon :icon="card.icon" size="4x"/>
+            </div>
+            <div class="card-header">
+              <div class="card-title h6">{{ $t(card.langKey) }}</div>
+            </div>
           </div>
-          <div class="card-header">
-            <div class="card-title h6">{{ $t(card.langKey) }}</div>
-          </div>
-        </div>
+        </router-link>
       </div>
       <div class="column col-2 col-md-4 col-sm-6 col-xs-12">
-        <div class="card color2 card-vife">
-          <div class="card-image">
-            <img src="../assets/pix/vife-logo.png" :alt="$t('ViFE')">
+        <router-link to="/vife">
+          <div class="card color2 card-vife">
+            <div class="card-image">
+              <img src="../assets/pix/vife-logo.png" :alt="$t('ViFE')">
+            </div>
+            <div class="card-header">
+              <div class="card-title h6">{{ $t('ViFE_abbr') }}</div>
+            </div>
           </div>
-          <div class="card-header">
-            <div class="card-title h6">{{ $t('ViFE_abbr') }}</div>
-          </div>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>
