@@ -31,7 +31,7 @@
 <script>
 // @ is an alias to /src
 import Overview from "../components/Overview";
-import News from "../news/index.js";
+import News from "../data/news";
 import i18n from '@/plugins/i18n';
 
 export default {
