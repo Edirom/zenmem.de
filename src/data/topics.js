@@ -31,7 +31,7 @@ export default [
     },
     {
         langKey: 'ViFE_abbr',
-        route: 'ViFE',
+        route: 'vife',
         icon: '',
         img: '/pix/vife-logo.png',
     },
