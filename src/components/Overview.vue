@@ -3,7 +3,7 @@
     <div class="columns">
       <div class="column col-2 col-md-4 col-sm-6 col-xs-12" v-for="(topic, index) in getTopics()"
            :key="`topic${index}`">
-        <router-link :to="'/' + topic.langKey">
+        <router-link :to="'/' + topic.route">
           <div :class="index % 2 === 0 ? 'card color1':'card color2'">
             <div class="card-image">
               <font-awesome-icon v-if="topic.icon !== ''" :icon="topic.icon" size="4x"/>

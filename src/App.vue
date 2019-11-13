@@ -26,7 +26,7 @@
     <div v-if="getCurrentRoute() !== 'home'" class="second-nav">
       <div class="second-nav-entry" v-for="(topic, index) in getTopics()"
            :key="`topic${index}`">
-        <router-link :to="'/' + topic.langKey">
+        <router-link :to="'/' + topic.route">
           <font-awesome-icon v-if="topic.icon !== ''" :icon="topic.icon" size="sm"/>
           <img v-if="topic.img !== ''" :src="topic.img" :alt="$t(topic.langKey)">
           <span class="second-nav-entry-title">{{ $t(topic.langKey) }}</span>
