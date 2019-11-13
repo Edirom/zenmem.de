@@ -20,6 +20,8 @@ RUN npm install \
 FROM nginx:alpine
 LABEL maintainer="Daniel Röwenstrunk for ZenMEM"
 
+COPY nginx_config/default.conf /etc/nginx/conf.d/default.conf
+
 RUN mkdir -p /usr/share/nginx/html
 WORKDIR /usr/share/nginx/html
 COPY --from=builder /app/dist/ /usr/share/nginx/html/
