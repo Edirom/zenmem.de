@@ -1,4 +1,5 @@
 export default {
+    news: 'News',
     imprint: 'Imprint',
     about: 'About us',
     contact: 'Contact us',

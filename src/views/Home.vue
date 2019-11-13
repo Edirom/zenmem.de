@@ -10,16 +10,19 @@
           <p v-html="$t('home_text')"></p>
         </div>
         <div class="column col-6 col-md-6 col-sm-12 col-xs-12 newsColumn">
-          <div class="tile" v-for="(news, index) in News"
-               :key="`news${index}`">
-            <div class="tile-icon">
-              <figure class="avatar avatar-lg">
-                <img :src="news.imgURL" alt="Avatar">
-              </figure>
-            </div>
-            <div class="tile-content">
-              <p class="tile-title">{{ getNewsByCurrentLang(news).title }}</p>
-              <p class="tile-subtitle">{{ getNewsByCurrentLang(news).date }}</p>
+          <div class="news">
+            <h3>{{ $t('news') }}</h3>
+            <div class="tile " v-for="(news, index) in News"
+                 :key="`news${index}`">
+              <div class="tile-icon">
+                <figure class="avatar avatar-lg">
+                  <img :src="news.imgURL" alt="Avatar">
+                </figure>
+              </div>
+              <div class="tile-content">
+                <p class="tile-title">{{ getNewsByCurrentLang(news).title }}</p>
+                <p class="tile-subtitle">{{ getNewsByCurrentLang(news).date }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -66,10 +69,21 @@ export default {
     padding-top: 3rem;
   }
 
+  .news {
+    box-shadow: 0 0.25rem 1rem rgba(48,55,66,.15);
+    padding: 1rem;
+  }
+
+  .news p {
+    margin-bottom: 0.5rem;
+  }
+
+  .news > div {
+    margin-top: 1rem;
+  }
+
   .twitter {
-    background-color: #f3f3f3;
-    padding: 0.5rem;
-    border-radius: 0.2rem;
+    box-shadow: 0 0.25rem 1rem rgba(48,55,66,.15);
   }
 </style>
 
