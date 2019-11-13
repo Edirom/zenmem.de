@@ -5,7 +5,7 @@
             <div class="columns">
                 <div class="column col-12">
                     <h1>{{ $t('projects') }}</h1>
-                    <p v-html="$t('home_text')"></p>
+                    <p v-html="$t('projects_text')"></p>
 
                     <div class="container grid-lg">
                         <div class="columns">
