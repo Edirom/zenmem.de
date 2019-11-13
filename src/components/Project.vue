@@ -12,7 +12,7 @@
             <p v-html="getProjectByCurrentLang(project).desc"></p>
         </div>
         <div class="card-footer">
-            <a :href="project.URL" target="_blank">{{ project.URL }}</a>
+            <a :href="project.URL" target="_blank">{{ getShortURL(project.URL) }}</a>
         </div>
     </div>
     </div>
@@ -43,6 +43,11 @@
         methods: {
             getProjectByCurrentLang: function(project) {
                 return project[i18n.locale];
+            },
+            getShortURL: function (url) {
+                if(url.length > 32)
+                    return url.substring(0, 31) + "...";
+                return url;
             }
         }
     }

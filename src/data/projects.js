@@ -139,14 +139,67 @@ export default [
         logo: '/project-pix/zenmem.png',
         ends: 2020,
     },
+    {
+        title: 'Pasticcio',
+        de: {
+            subtitle: 'Ways of arranging attractive operas',
+            desc: 'Laufzeit: 2018–2020<br/>Förderer: <a href="https://www.dfg.de/" target="_blank">Deutsche Forschungsgemeinschaft</a> und <a href="https://www.ncn.gov.pl/" target="_blank">Polish Science Centre</a>',
+        },
+        en: {
+            subtitle: 'Ways of arranging attractive operas',
+            desc: 'Funding period: 2018–2020<br/>Funding agency: <a href="https://www.dfg.de/" target="_blank">German Research Foundation</a> and <a href="https://www.ncn.gov.pl/" target="_blank">Polish Science Centre</a>',
+        },
+        URL: 'https://pasticcio-project.eu/',
+        logo: '/project-pix/pasticcio-logo.png',
+        ends: 2020,
+    },
+    {
+        title: 'Bernd Alois Zimmermann-Gesamtausgabe',
+        de: {
+            subtitle: 'Historisch-kritische Ausgabe seiner Werke, Schriften und Briefe',
+            desc: 'Laufzeit: 2016–2041<br/>Förderer: <a href="http://www.adwmainz.de/" target="_blank">Akademie der Wissenschaften und der Literatur</a> und <a href="http://www.bbaw.de/" target="_blank">Berlin-Brandenburgische Akademie der Wissenschaften</a>',
+        },
+        en: {
+            subtitle: 'Historisch-kritische Ausgabe seiner Werke, Schriften und Briefe',
+            desc: 'Funding period: 2016–2041<br/>Funding agency: <a href="http://www.adwmainz.de/" target="_blank">Akademie der Wissenschaften und der Literatur</a> and <a href="http://www.bbaw.de/" target="_blank">Berlin-Brandenburg Academy of Sciences and Humanitiesatur</a>',
+        },
+        URL: 'http://www.adwmainz.de/projekte/bernd-alois-zimmermann-gesamtausgabe-historisch-kritische-ausgabe-seiner-werke-schriften-und-briefe/beschreibung.html',
+        logo: '',
+        ends: 2041,
+    },
+    {
+        title: 'NFDI4Culture (preliminary phase)',
+        de: {
+            subtitle: 'UnterstüEung der Antragsphase für NFDl4Culture',
+            desc: 'Laufzeit: 2019–2020<br/>Förderer: <a href="https://www.mkw.nrw/" target="_blank">Ministerium für Kultur und Wissenschaft des Landes Nordrhein-Westfalen</a>',
+        },
+        en: {
+            subtitle: 'Support of Application for NFDI4Culture',
+            desc: 'Funding period: 2019–2020<br/>Funding agency: <a href="https://www.mkw.nrw/" target="_blank">Ministerium für Kultur und Wissenschaft des Landes Nordrhein-Westfalen</a>',
+        },
+        URL: '',
+        logo: '/project-pix/nfdi4culture-logo.png',
+        ends: 2020,
+    },
+    {
+        title: 'A Cosmopolitan Composer in Pre-Revolutionary Europe – Giuseppe Sarti',
+        de: {
+            subtitle: '',
+            desc: 'Laufzeit: 2013–2016<br/>Förderer: <a href="http://www.einsteinfoundation.de/" target="_blank">Einsteinstiftung Berlin</a>',
+        },
+        en: {
+            subtitle: '',
+            desc: 'Funding period: 2013–2016<br/>Funding agency: <a href="http://www.einsteinfoundation.de/" target="_blank">Einstein Foundation Berlin</a>',
+        },
+        URL: 'https://sarti-edition.de/',
+        logo: '/project-pix/sarti-logo.png',
+        ends: 2016,
+    },
 ];
 
 /*
 
 Verbundstelle
-Pasticcio
-Zimmermann
-NFDI NRW
 Sarti
 
  */
