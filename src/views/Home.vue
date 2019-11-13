@@ -15,9 +15,10 @@
             <div class="tile " v-for="(news, index) in News"
                  :key="`news${index}`">
               <div class="tile-icon">
-                <figure class="avatar avatar-lg">
+                <font-awesome-icon :icon="['far', 'check-circle']" size="3x"/>
+                <!--<figure class="avatar avatar-lg">
                   <img :src="news.imgURL" alt="Avatar">
-                </figure>
+                </figure>-->
               </div>
               <div class="tile-content">
                 <p class="tile-title">{{ getNewsByCurrentLang(news).title }}</p>
@@ -80,6 +81,10 @@ export default {
 
   .news > div {
     margin-top: 1rem;
+  }
+
+  .news .tile-icon {
+    color: #335480;
   }
 
   .twitter {
