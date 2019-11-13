@@ -1,20 +1,20 @@
 <template>
     <div class=" column col-4 col-md-6 col-sm-12 col-xs-12">
-    <div class="project card">
-        <div class="card-image">
-            <img v-if="project.logo !== ''" :src="project.logo" :alt="project.title" class="img-responsive">
+        <div class="project card">
+            <div class="card-image">
+                <img v-if="project.logo !== ''" :src="project.logo" :alt="project.title" class="img-responsive">
+            </div>
+            <div class="card-header">
+                <div class="card-title h5">{{ project.title }}</div>
+                <div v-if="getProjectByCurrentLang(project).subtitle !== ''" class="card-subtitle text-gray" v-html="getProjectByCurrentLang(project).subtitle"></div>
+            </div>
+            <div class="card-body">
+                <p v-html="getProjectByCurrentLang(project).desc"></p>
+            </div>
+            <div class="card-footer">
+                <a :href="project.URL" target="_blank">{{ getShortURL(project.URL) }}</a>
+            </div>
         </div>
-        <div class="card-header">
-            <div class="card-title h5">{{ project.title }}</div>
-            <div v-if="getProjectByCurrentLang(project).subtitle !== ''" class="card-subtitle text-gray" v-html="getProjectByCurrentLang(project).subtitle"></div>
-        </div>
-        <div class="card-body">
-            <p v-html="getProjectByCurrentLang(project).desc"></p>
-        </div>
-        <div class="card-footer">
-            <a :href="project.URL" target="_blank">{{ getShortURL(project.URL) }}</a>
-        </div>
-    </div>
     </div>
 </template>
 
