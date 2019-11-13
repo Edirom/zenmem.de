@@ -1,27 +1,16 @@
 <template>
   <div id="overview" class="container grid-lg">
     <div class="columns">
-      <div class="column col-2 col-md-4 col-sm-6 col-xs-12" v-for="(card, index) in cards"
-           :key="`card${index}`">
-        <router-link :to="'/' + card.langKey">
+      <div class="column col-2 col-md-4 col-sm-6 col-xs-12" v-for="(topic, index) in getTopics()"
+           :key="`topic${index}`">
+        <router-link :to="'/' + topic.langKey">
           <div :class="index % 2 === 0 ? 'card color1':'card color2'">
             <div class="card-image">
-              <font-awesome-icon :icon="card.icon" size="4x"/>
+              <font-awesome-icon v-if="topic.icon !== ''" :icon="topic.icon" size="4x"/>
+              <img v-if="topic.img !== ''" :src="topic.img" :alt="$t(topic.langKey)">
             </div>
             <div class="card-header">
-              <div class="card-title h6">{{ $t(card.langKey) }}</div>
-            </div>
-          </div>
-        </router-link>
-      </div>
-      <div class="column col-2 col-md-4 col-sm-6 col-xs-12">
-        <router-link to="/vife">
-          <div class="card color2 card-vife">
-            <div class="card-image">
-              <img src="../assets/pix/vife-logo.png" :alt="$t('ViFE')">
-            </div>
-            <div class="card-header">
-              <div class="card-title h6">{{ $t('ViFE_abbr') }}</div>
+              <div class="card-title h6">{{ $t(topic.langKey) }}</div>
             </div>
           </div>
         </router-link>
@@ -31,33 +20,15 @@
 </template>
 
 <script>
+
+  import topics from '@/data/topics.js'
+
 export default {
   name: 'Overview',
-  data() {
-    return {
-      cards: [
-        {
-          langKey: 'standards',
-          icon: 'award',
-        },
-        {
-          langKey: 'tools',
-          icon: 'tablet-alt',
-        },
-        {
-          langKey: 'education',
-          icon: 'graduation-cap',
-        },
-        {
-          langKey: 'projects',
-          icon: 'project-diagram',
-        },
-        {
-          langKey: 'cooperation',
-          icon: 'users',
-        }
-      ]
-    };
+  methods: {
+    getTopics: function () {
+      return topics;
+    }
   }
 }
 </script>
@@ -75,7 +46,7 @@ export default {
     margin-top: 1rem;
   }
 
-  #overview .card.card-vife .card-image img {
+  #overview .card .card-image img {
     max-height: 3.6em;
   }
 

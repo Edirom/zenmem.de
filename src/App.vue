@@ -23,6 +23,16 @@
         </div>
       </section>
     </header>
+    <div v-if="getCurrentRoute() !== 'home'" class="second-nav">
+      <div class="second-nav-entry" v-for="(topic, index) in getTopics()"
+           :key="`topic${index}`">
+        <router-link :to="'/' + topic.langKey">
+          <font-awesome-icon v-if="topic.icon !== ''" :icon="topic.icon" size="sm"/>
+          <img v-if="topic.img !== ''" :src="topic.img" :alt="$t(topic.langKey)">
+          <span class="second-nav-entry-title">{{ $t(topic.langKey) }}</span>
+        </router-link>
+      </div>
+    </div>
     <router-view/>
     <footer id="footer">
       <div class="footer-third">
@@ -45,6 +55,8 @@
 
 <script>
   import i18n from '@/plugins/i18n';
+  import router from '@/router/index.js';
+  import topics from "@/data/topics.js";
 
   export default {
     methods: {
@@ -54,6 +66,12 @@
       },
       isLocale: function(locale) {
         return i18n.locale === locale;
+      },
+      getCurrentRoute: function () {
+        return router.currentRoute.name;
+      },
+      getTopics: function () {
+        return topics;
       }
     }
   }
@@ -76,6 +94,27 @@ a, a:hover, a:visited {
 header {
   padding: .7rem .5rem .3rem;
   background-color: #335480;
+}
+
+.second-nav {
+  background-color: #f3f3f3;
+  height: 30px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.second-nav-entry {
+  display: inline-block;
+  margin: 0 1.5rem;
+}
+
+.second-nav-entry img {
+  max-height: 20px;
+  margin-bottom: -4px;
+}
+
+.second-nav-entry-title {
+  padding-left: 0.5rem;
 }
 
 footer {
