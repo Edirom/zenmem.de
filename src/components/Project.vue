@@ -59,6 +59,10 @@
         margin: 1rem 0;
     }
 
+    .project.card {
+        box-shadow: 0 0.25rem 1rem rgba(48,55,66,.15);
+    }
+
     .card-image {
         margin-top: 1rem;
         padding: 0 1rem 1rem;

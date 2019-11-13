@@ -181,20 +181,6 @@ export default [
         logo: '/project-pix/nfdi4culture-logo.png',
         ends: 2020,
     },
-    {
-        title: 'A Cosmopolitan Composer in Pre-Revolutionary Europe – Giuseppe Sarti',
-        de: {
-            subtitle: '',
-            desc: 'Laufzeit: 2013–2016<br/>Förderer: <a href="http://www.einsteinfoundation.de/" target="_blank">Einsteinstiftung Berlin</a>',
-        },
-        en: {
-            subtitle: '',
-            desc: 'Funding period: 2013–2016<br/>Funding agency: <a href="http://www.einsteinfoundation.de/" target="_blank">Einstein Foundation Berlin</a>',
-        },
-        URL: 'https://sarti-edition.de/',
-        logo: '/project-pix/sarti-logo.png',
-        ends: 2016,
-    },
 ];
 
 /*
