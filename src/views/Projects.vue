@@ -14,6 +14,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="column col-12 margin-top">
+                    <h1>{{ $t('coop_projects') }}</h1>
+                    <p v-html="$t('coop_projects_text')"></p>
+
+                    <div class="container grid-lg">
+                        <div class="columns">
+                            <Project v-for="(project, index) in orderedCoopProjects"
+                                     :key="`project${index}`" :project="project"/>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -22,6 +33,7 @@
 <script>
     import Project from "../components/Project";
     import projectsData from "../data/projects";
+    import coopProjectsData from "../data/coopProjects";
 
     export default {
         name: "projects",
@@ -29,6 +41,9 @@
         computed: {
             orderedProjects: function () {
                 return projectsData.sort((a, b) => b.ends - a.ends );
+            },
+            orderedCoopProjects: function () {
+                return coopProjectsData.sort((a, b) => b.ends - a.ends );
             }
         }
     }
@@ -36,6 +51,10 @@
 
 <style scoped>
     .projects .mainContent {
+        margin-top: 5rem;
+    }
+
+    .margin-top {
         margin-top: 5rem;
     }
 </style>

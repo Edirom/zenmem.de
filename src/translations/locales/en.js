@@ -8,6 +8,7 @@ export default {
     tools: 'Tools',
     education: 'Education',
     projects: 'Projects',
+    coop_projects: 'Cooperating Projects',
     cooperation: 'Cooperation',
     ViFE: 'Virtual Research Group Edirom',
     ViFE_abbr: 'ViFE',
@@ -26,4 +27,5 @@ export default {
     vife_text: '<p>The <a href="https://edirom.de" title="Virtual Research Group Edirom (ViFE)" target="_blank">Virtual Research Group Edirom (ViFE)</a> is an association of current and former employees of the <a target="_blank" href="http://www.muwi-detmold-paderborn.de" title="Musicology Department Detmold/Paderborn">Musicology Department Detmold/Paderborn</a> who are involved in various projects dealing with the application of digital methods in musicology. The common goal is the promotion of digital work in the field of musicological research, especially of digital text and music editions.</p><p>The group is named after the DFG project for the development of tools for digital historio-critical music editions (2006-2012), which became known under the name "Edirom" and formed the starting point for a number of other digital projects.</p><p>The work of the group, which is both nationally and internationally oriented, focuses on the conception of digital editions and their forms of publication, the application and further development of relevant standards (<a target="_blank" href="http://www.tei-c.org/index.xml">TEI</a>, <a target="_blank" href="http://music-encoding.org">MEI</a>) and tools, questions of data modelling and project organization, the promotion of communication between digitally working projects and institutions, and the teaching of corresponding knowledge and skills. The partners in the network are working together to develop competencies in these areas in order to be available as contact persons for the new digital community.</p><p>In order to promote young researchers, ViFE supports exam papers and dissertations in the context of the projects.</p>',
 
     projects_text: '',
+    coop_projects_text: '',
 };

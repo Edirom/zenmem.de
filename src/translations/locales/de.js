@@ -8,6 +8,7 @@ export default {
     tools: 'Werkzeuge',
     education: 'Weiterbildung',
     projects: 'Projekte',
+    coop_projects: 'Kooperationsprojekte',
     cooperation: 'Kooperationen',
     ViFE: 'Virtueller Forschungsverbund Edirom',
     ViFE_abbr: 'ViFE',
@@ -26,4 +27,5 @@ export default {
     vife_text: '<p>Der <a href="https://edirom.de" title="Virtueller Forschungsverbund Edirom" target="_blank">Virtuelle Forschungsverbund Edirom (ViFE)</a> ist ein Zusammenschluss von derzeitigen und ehemaligen Mitarbeiterinnen und Mitarbeitern des <a target="_blank" href="http://www.muwi-detmold-paderborn.de" title="Musikwissenschaftlichen Seminar Detmold/Paderborn">Musikwissenschaftlichen Seminars Detmold/Paderborn</a>, die sich in verschiedenen Projekten mit der Anwendung digitaler Methoden in der Musikwissenschaft beschäftigen. Das gemeinsame Ziel ist die Beförderung digitalen Arbeitens im Umfeld musikwissenschaftlicher Forschung, insbesondere von digitalen Text- und Noteneditionen.</p><p>Namensgeber des Verbunds ist das DFG-Projekt zur Entwicklung von Werkzeugen für digitale Formen wissenschaftlich-kritischer Musikeditionen (2006–2012), das unter dem Namen „Edirom“ bekannt wurde und den Ausgangspunkt für eine Reihe weiterer digitaler Projekte bildete.</p><p>Im Mittelpunkt der sowohl national als auch international ausgerichteten Arbeiten des Verbunds stehen die Konzeption digitaler Editionen und deren Publikationsformen, die Anwendung und Weiterentwicklung einschlägiger Standards (<a target="_blank" href="http://www.tei-c.org/index.xml">TEI</a>, <a target="_blank" href="http://music-encoding.org">MEI</a>) und Werkzeuge, Fragen der Datenmodellierung und Projektorganisation, die Beförderung der Kommunikation zwischen digital arbeitenden Projekten und Institutionen und die Vermittlung entsprechender Kenntnisse und Fertigkeiten. Die Verbundpartner bemühen sich gemeinsam um den Ausbau von Kompetenzen in diesen Bereichen, um als Ansprechpartner für die neue digitale Community zur Verfügung zu stehen.</p><p>Im Sinne der Nachwuchsförderung unterstützt ViFE Examensarbeiten und Dissertationen im Umfeld der Projekte.</p>',
 
     projects_text: '',
+    coop_projects_text: '',
 };
