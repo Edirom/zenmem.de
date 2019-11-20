@@ -69,6 +69,34 @@ export default [
         logo: '',
         ends: 2041,
     },
+    {
+        title: 'OPERA',
+        de: {
+            subtitle: 'Spektrum des europäischen Musiktheaters in Einzeleditionen',
+            desc: 'Laufzeit: 2009–2024<br/>Träger: <a href="http://www.adwmainz.de/" target="_blank">Akademie der Wissenschaften und der Literatur | Mainz</a>',
+        },
+        en: {
+            subtitle: 'Spektrum des europäischen Musiktheaters in Einzeleditionen',
+            desc: 'Funding period: 2009–2024<br/>Funding agency: <a href="http://www.adwmainz.de/" target="_blank">Akademie der Wissenschaften und der Literatur | Mainz</a>',
+        },
+        URL: 'http://www.opera.adwmainz.de/',
+        logo: '',
+        ends: 2024,
+    },
+    {
+        title: 'Reger-Werkausgabe',
+        de: {
+            subtitle: '',
+            desc: 'Laufzeit: 2008–2026<br/>Träger: <a href="http://www.adwmainz.de/" target="_blank">Akademie der Wissenschaften und der Literatur | Mainz</a>',
+        },
+        en: {
+            subtitle: '',
+            desc: 'Funding period: 2008–2026<br/>Funding agency: <a href="http://www.adwmainz.de/" target="_blank">Akademie der Wissenschaften und der Literatur | Mainz</a>',
+        },
+        URL: 'https://www.max-reger-institut.de/de/reger-werkausgabe',
+        logo: '',
+        ends: 2026,
+    },
 ];
 
 /*
