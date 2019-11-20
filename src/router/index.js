@@ -34,6 +34,16 @@ const routes = [
     component: () => import('../views/ViFE.vue')
   },
   {
+    path: '/tools',
+    name: 'tools',
+    component: () => import('../views/Tools.vue')
+  },
+  {
+    path: '/standards',
+    name: 'standards',
+    component: () => import('../views/Standards.vue')
+  },
+  {
     path: '/contact',
     name: 'contact',
     component: () => import('../views/Contact.vue')
