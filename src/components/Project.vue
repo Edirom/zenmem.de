@@ -2,7 +2,9 @@
     <div class=" column col-4 col-md-6 col-sm-12 col-xs-12">
         <div class="project card">
             <div class="card-image">
-                <img v-if="project.logo !== ''" :src="project.logo" :alt="project.title" class="img-responsive">
+                <a v-if="project.logo !== ''" :href="project.URL" target="_blank">
+                    <img :src="project.logo" :alt="project.title" class="img-responsive">
+                </a>
             </div>
             <div class="card-header">
                 <div class="card-title h5">{{ project.title }}</div>
@@ -11,8 +13,8 @@
             <div class="card-body">
                 <p v-html="getProjectByCurrentLang(project).desc"></p>
             </div>
-            <div class="card-footer">
-                <a :href="project.URL" target="_blank">{{ getShortURL(project.URL) }}</a>
+            <div v-if="project.URL !== ''" class="card-footer">
+                <font-awesome-icon icon="external-link-alt"/><a :href="project.URL" target="_blank">{{ getShortURL(project.URL) }}</a>
             </div>
         </div>
     </div>
@@ -45,8 +47,8 @@
                 return project[i18n.locale];
             },
             getShortURL: function (url) {
-                if(url.length > 32)
-                    return url.substring(0, 31) + "...";
+                if(url.length > 30)
+                    return url.substring(0, 29) + "...";
                 return url;
             }
         }
@@ -79,5 +81,9 @@
 
     .card-footer {
         padding-top: 0;
+    }
+
+    .card-footer a {
+        padding-left: 0.4rem;
     }
 </style>

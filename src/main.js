@@ -11,13 +11,13 @@ Vue.use(FlagIcon);
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faAward, faTabletAlt,
   faGraduationCap, faProjectDiagram,
-  faUsers, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+  faUsers, faCheckCircle, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faAward, faTabletAlt, faGraduationCap,
-    faProjectDiagram, faUsers, far, faCheckCircle);
+    faProjectDiagram, faUsers, far, faCheckCircle, faExternalLinkAlt);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
