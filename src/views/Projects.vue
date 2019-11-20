@@ -15,7 +15,7 @@
                     </div>
                 </div>
                 <div class="column col-12 margin-top">
-                    <h1>{{ $t('coop_projects') }}</h1>
+                    <h1 id="coop_projects">{{ $t('coop_projects') }}</h1>
                     <p v-html="$t('coop_projects_text')"></p>
 
                     <div class="container grid-lg">
