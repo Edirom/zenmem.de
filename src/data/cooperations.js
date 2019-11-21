@@ -61,7 +61,7 @@ export default [
             subtitle: 'Digital Humanities at the Akademie der Wissenschaften und der Literatur Mainz',
             desc: '',
         },
-        URL: '',
+        URL: 'http://www.digitale-akademie.de/',
         logo: '/coop-pix/digitale-akademie-logo.png',
     },
 ];
