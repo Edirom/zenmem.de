@@ -49,6 +49,11 @@ const routes = [
     component: () => import('../views/Contact.vue')
   },
   {
+    path: '/imprint',
+    name: 'imprint',
+    component: () => import('../views/Imprint.vue')
+  },
+  {
     path: '/about',
     name: 'about',
     component: () => import('../views/About.vue')

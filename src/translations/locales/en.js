@@ -17,8 +17,13 @@ export default {
     UPB: 'Paderborn University',
     coordinator: 'Coordinator',
     project_manager: 'Managing director',
-    coordinator_contact: 'Hornsche Strasse 39<br/>32756 Detmold<br/>Germany<br/><br/>Phone: +49 5231 975-663<br/>Mail: jveit@mail.uni-paderborn.de',
-    project_manager_contact: 'Hornsche Strasse 39<br/>32756 Detmold<br/>Germany<br/><br/>Phone: +49 5231 975-662<br/>Mail: roewenstrunk@uni-paderborn.de',
+    resp_content: 'Responsible for content',
+    resp_technical: 'Technical responsibility',
+
+
+    coordinator_contact: 'Hornsche Strasse 39<br/>32756 Detmold<br/>Germany<br/><br/>Phone: +49 5231 975-663<br/>Mail: <a href="mailto:jveit@mail.uni-paderborn.de">jveit@mail.uni-paderborn.de</a>',
+    project_manager_contact: 'Hornsche Strasse 39<br/>32756 Detmold<br/>Germany<br/><br/>Phone: +49 5231 975-662<br/>Mail: <a href="mailto:roewenstrunk@uni-paderborn.de">roewenstrunk@uni-paderborn.de</a>',
+
 
     home_text: '<p>Welcome to ZenMEM, the Center for Music, Edition, Media. The ZenMEM emerged from a <a href="https://project.zenmem.de/">project</a> funded by the BMBF and conducts the activities of the University of Paderborn in the field of Digital Music Edition and Digital Musicology. Doing so, it is also the successor of the <a href="https://edirom.de/edirom-projekt/">Edirom project</a>, which has laid the foundations for a genuinely digital music philology in Germany and beyond. At the same time, it is the organisational home of the <a href="https://dev.zenmem.de/ViFE_abbr">ViFE</a>. The <em>Virtual Research Group Edirom</em> is an association of scholars who work or have worked in one of the digital Paderborn/Detmold <a href="https://dev.zenmem.de/projects">projects</a> and are dedicated to the conceptual and technical further development of digital musicology.</p>',
 
