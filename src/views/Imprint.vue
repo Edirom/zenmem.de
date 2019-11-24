@@ -49,7 +49,7 @@
                         Cookies können mit einer Verfallszeit versehen werden. So werden bspw. Cookies, die nur in einer Sitzung verwendet werden oder deren Verfallszeit abgelaufen ist, beim Beenden des Browsers automatisch gelöscht. Das Speichern von Cookies können Sie in den Einstellungen des Browsers ausschalten, allerdings lassen sich die über die Cookies gesteuerten Funktionen dann nicht mehr nutzen. Sie können die im Browser gespeicherten Cookies einsehen und jederzeit auch einzelne Cookies löschen.<br/>
                         Diese Webseite verwendet Cookies für folgende Zwecke:<br/>
                     <ul>
-                        <li>Speicherung der durch den Nutzer gesetzten Sprache</li>                     
+                        <li>Speicherung der durch den Nutzer gesetzten Sprache</li>
                     </ul>
                     </p><br/>
                     <h3>§2 Rechtsgrundlagen</h3>

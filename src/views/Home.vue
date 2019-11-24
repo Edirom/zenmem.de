@@ -12,18 +12,18 @@
         <div class="column col-6 col-md-6 col-sm-12 col-xs-12 newsColumn">
           <div class="news">
             <h3>{{ $t('news') }}</h3>
-            <div class="tile " v-for="(news, index) in News"
+            <div class="tile " v-for="(news, index) in getFirstNews()"
                  :key="`news${index}`">
               <div class="tile-icon">
                 <font-awesome-icon :icon="['far', 'check-circle']" size="3x"/>
-                <!--<figure class="avatar avatar-lg">
-                  <img :src="news.imgURL" alt="Avatar">
-                </figure>-->
               </div>
               <div class="tile-content">
                 <p class="tile-title">{{ getNewsByCurrentLang(news).title }}</p>
-                <p class="tile-subtitle">{{ getNewsByCurrentLang(news).date }}</p>
+                <p class="tile-date">{{ getDate(news.date) }}</p>
               </div>
+            </div>
+            <div class="all_news">
+              <p><a href="/news">{{ $t('all_news') }}</a></p>
             </div>
           </div>
         </div>
@@ -42,6 +42,7 @@
 import Overview from "../components/Overview";
 import News from "../data/news";
 import i18n from '@/plugins/i18n';
+import Date from '@/utils/date';
 
 export default {
   name: 'home',
@@ -54,8 +55,14 @@ export default {
     };
   },
   methods: {
+    getFirstNews: function() {
+      return News.slice(0, 3);
+    },
     getNewsByCurrentLang: function(news) {
       return news[i18n.locale];
+    },
+    getDate: function(date) {
+      return Date.getDate(date);
     }
   }
 }
@@ -85,6 +92,15 @@ export default {
 
   .news .tile-icon {
     color: #335480;
+  }
+
+  .news .tile-date {
+    color: #999;
+    margin-top: -0.3rem;
+  }
+  
+  .all_news {
+    text-align: right;
   }
 
   .twitter {
