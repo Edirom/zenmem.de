@@ -86,11 +86,11 @@ export default [
     {
         title: 'Zentrum Musik – Edition – Medien (ZenMEM)',
         de: {
-            subtitle: '',
+            subtitle: 'Musik und nicht-textuelle Objekte im Kontext digitaler Editionen',
             desc: 'Laufzeit: 2014–2020<br/>Förderer: <a href="https://www.bmbf.de/" target="_blank">Bundesministerium für Bildung und Forschung</a>',
         },
         en: {
-            subtitle: '',
+            subtitle: 'Music and non-textual objects in the context of digital editions',
             desc: 'Funding period: 2014–2020<br/>Funding agency: <a href="https://www.bmbf.de/" target="_blank">Federal Ministry of Education and Research</a>',
         },
         URL: 'https://project.zenmem.de',
@@ -100,7 +100,7 @@ export default [
     {
         title: 'NFDI4Culture (preliminary phase)',
         de: {
-            subtitle: 'UnterstüEung der Antragsphase für NFDl4Culture',
+            subtitle: 'Unterstützung der Antragsphase für NFDl4Culture',
             desc: 'Laufzeit: 2019–2020<br/>Förderer: <a href="https://www.mkw.nrw/" target="_blank">Ministerium für Kultur und Wissenschaft des Landes Nordrhein-Westfalen</a>',
         },
         en: {
