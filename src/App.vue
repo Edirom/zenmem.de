@@ -9,10 +9,10 @@
         <router-link to="/contact">{{ $t('contact') }}</router-link>
       </section>
       <section class="navbar-section">
-        <div class="input-group input-inline">
+        <!--<div class="input-group input-inline">
           <input class="form-input" type="text" :placeholder="$t('search')">
           <button class="btn btn-primary input-group-btn">{{ $t('search') }}</button>
-        </div>
+        </div>-->
         <div id="flags" class="input-group input-inline">
           <button v-if="!isLocale('de')" class="btn btn-primary" key="de" @click="changeLocale('de')">
             <flag iso="de" v-bind:squared=false />
