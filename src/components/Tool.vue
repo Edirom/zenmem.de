@@ -1,11 +1,11 @@
 <template>
     <div class=" column col-4 col-md-6 col-sm-12 col-xs-12">
         <div class="tool card">
-            <!--<div v-if="tool.logo !== ''" class="card-image">
+            <div v-if="tool.logo !== ''" class="card-image">
                 <a :href="tool.URL" target="_blank">
                     <img :src="tool.logo" :alt="tool.title" class="img-responsive">
                 </a>
-            </div>-->
+            </div>
             <div class="card-header">
                 <div class="card-title h5">{{ tool.title }}</div>
                 <div v-if="getToolByCurrentLang(tool).subtitle !== ''" class="card-subtitle text-gray" v-html="getToolByCurrentLang(tool).subtitle"></div>
@@ -63,7 +63,7 @@
 
     .tool.card {
         box-shadow: 0 0.25rem 1rem rgba(48,55,66,.15);
-        background-color: #f3f3f3;
+        
     }
 
     .card-image {

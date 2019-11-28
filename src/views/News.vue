@@ -11,7 +11,7 @@
                             <div class="tile-icon">
                                 <font-awesome-icon :icon="['far', 'check-circle']" size="3x"/>
                             </div>
-                            <div class="tile-content">
+                            <div class="tile-content" :id="news.date">
                                 <p class="tile-title">{{ getNewsByCurrentLang(news).title }}</p>
                                 <p class="tile-date">{{ getDate(news.date) }}</p>
                                 <p class="tile-desc" v-html="getNewsByCurrentLang(news).desc"></p>

@@ -18,7 +18,7 @@
                 <font-awesome-icon :icon="['far', 'check-circle']" size="3x"/>
               </div>
               <div class="tile-content">
-                <p class="tile-title">{{ getNewsByCurrentLang(news).title }}</p>
+                <p class="tile-title"><a :href="'/news#' + news.date">{{ getNewsByCurrentLang(news).title }}</a></p>
                 <p class="tile-date">{{ getDate(news.date) }}</p>
               </div>
             </div>
