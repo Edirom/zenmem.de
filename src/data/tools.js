@@ -92,7 +92,7 @@ export default [
             desc: 'A web-based tool that can be used to compare prints of historical sheet music (and text) prints or to control corrections in new score typesetting.'
         },
         URL: 'https://ehinman.edirom.de/',
-        logo: '/tools-pix/ehinman.jpg',
+        logo: '/tools-pix/eHinman.png',
         hotness: 35,
     },
     {
