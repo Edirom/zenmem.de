@@ -1,5 +1,16 @@
 export default [
     {
+        date: '2019-11-28',
+        en: {
+            title: 'NFDI4Culture defends application to DFG',
+            desc: 'On Tuesday, 26 November, the proposal of the NFDI initiative NFDI4Culture was defended at the DFG\'s reviewer panel. The panel consists of 13 experts from different humanities disciplines, from information sciences and computer science from all over the world and three members of the DFG expert group NFDI. Daniel Röwenstrunk, Managing Director of ZenMEM from the University of Paderborn, was involved in this defence. Feedback to the consortia is expected in February 2020. The funding decision will be made in June 2020. Further information is available at: <a href="https://www.uni-paderborn.de/nachricht/91990/" target="_blank">https://www.uni-paderborn.de/nachricht/91990/</a>'
+        },
+        de: {
+            title: 'NFDI4Culture verteidigt Antrag bei der DFG',
+            desc: 'Am Dienstag, 26. November, wurde der Antrag der NFDI-Initiative NFDI4Culture vor dem Gutachtergremium der DFG verteidigt. Das Gremium besteht aus 13 Expertinnen aus verschiedenen geisteswissenschaftlichen Fächern, aus den Informationswissenschaften und der Informatik aus aller Welt und drei Mitgliedern der DFG-Expertengruppe NFDI. Bei dieser Verteidigung war aus Paderborn Dipl. Wirt.-Inf. Daniel Röwenstrunk, Geschäftsführer des ZenMEM, beteiligt. Eine Rückmeldung an die Konsortien wird im Februar 2020 erwartet. Die Förderentscheidung fällt im Juni 2020. Nähere Informationen unter: <a href="https://www.uni-paderborn.de/nachricht/91990/" target="_blank">https://www.uni-paderborn.de/nachricht/91990/</a>'
+        }
+    },
+    {
         date: '2019-11-11',
         en: {
             title: 'DHd 2020 – registration now possible',
