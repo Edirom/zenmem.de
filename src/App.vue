@@ -15,10 +15,10 @@
         </div>-->
         <div id="flags" class="input-group input-inline">
           <button v-if="!isLocale('de')" class="btn btn-primary" key="de" @click="changeLocale('de')">
-            <flag iso="de" v-bind:squared=false />
+            DE
           </button>
           <button v-if="!isLocale('en')" class="btn btn-primary" key="en" @click="changeLocale('en')">
-            <flag iso="us" v-bind:squared=false />
+            EN
           </button>
         </div>
       </section>
