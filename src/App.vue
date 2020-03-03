@@ -197,4 +197,9 @@ footer .footer-zenmem {
   #flags {
     margin-left: 1rem;
   }
+
+
+  .card {
+    height: 97%;
+  }
 </style>
