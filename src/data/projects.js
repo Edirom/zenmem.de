@@ -17,11 +17,11 @@ export default [
         title: 'Detmolder Hoftheater',
         de: {
             subtitle: 'Entwicklung eines MEI- und TEI-basierten Modells kontextueller Tiefenerschließung von Musikalienbeständen am Beispiel des Detmolder Hoftheaters im 19. Jahrhundert (1825–1875)',
-            desc: 'Laufzeit: 2014–2019<br/>Förderer: <a href="https://www.dfg.de/" target="_blank">Deutsche Forschungsgemeinschaft</a>',
+            desc: 'Laufzeit: 2014–2020<br/>Förderer: <a href="https://www.dfg.de/" target="_blank">Deutsche Forschungsgemeinschaft</a>',
         },
         en: {
             subtitle: 'Entwicklung eines MEI- und TEI-basierten Modells kontextueller Tiefenerschließung von Musikalienbeständen am Beispiel des Detmolder Hoftheaters im 19. Jahrhundert (1825–1875)',
-            desc: 'Funding period: 2014–2019<br/>Funding agency: <a href="https://www.dfg.de/" target="_blank">German Research Foundation</a>',
+            desc: 'Funding period: 2014–2020<br/>Funding agency: <a href="https://www.dfg.de/" target="_blank">German Research Foundation</a>',
         },
         URL: 'http://hoftheater-detmold.de/',
         logo: '/project-pix/hoftheater_text.png',
