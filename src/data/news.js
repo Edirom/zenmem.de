@@ -1,4 +1,39 @@
 export default [
+    /*
+    {
+        date: '',
+        en: {
+            title: '',
+            desc: ''
+        },
+        de: {
+            title: '',
+            desc: ''
+        }
+    },
+     */
+    {
+        date: '2020-05-17',
+        en: {
+            title: 'Decision made: The ESS 2020 will also take place virtually',
+            desc: 'In a meeting of the members of ViFE, it was now decided to also hold the Edirom Summer School 2020 as a virtual meeting. The ESS is planned for 31th August to 4th September 2020. For the detailed planning, the experiences with the virtual MEC should be awaited first. Further information will be published afterwards, but the announced topics can probably be kept.'
+        },
+        de: {
+            title: 'Entscheidung gefallen: Auch die ESS 2020 findet digital statt',
+            desc: 'In einer Sitzung der Mitglieder des ViFE wurde nun beschlossen, auch die vom 31. August bis 4. September 2020 geplante Edirom Summer School 2020 als virtuelles Treffen durchzuführen. Für die Detailplanung sollen zunächst die Erfahrungen mit der virtuellen MEC abgewartet werden, weitere Informationen werden danach veröffentlicht, die angekündigten Themen aber voraussichtlich beibehalten werden können.'
+        }
+    },
+    {
+        date: '2020-05-17',
+        en: {
+            title: 'Music Encoding Conference as virtual event (26–29 May) ',
+            desc: 'The <a href="https://music-encoding.org/conference/2020/" target="_blank">Music Encoding Conference</a> planned for May 26 to 29 at Tufts University in Boston cannot take place as planned due to the corona pandemic. It is therefore all the more gratifying that the organizing committee has taken the trouble to convert the event into a virtual one at short notice. The event will now take place (in a somewhat reduced form) on the planned days, whereby, out of consideration for the meanwhile numerous registrations worldwide, the event times have been chosen in such a way that it is as convenient as possible to attend. More information about the program and registration is available at <a href="https://music-encoding.org/conference/2020/program/" target="_blank">https://music-encoding.org/conference/2020/program/</a>.'
+        },
+        de: {
+            title: 'Music Encoding Conference vom 26. bis 29. Mai digital',
+            desc: 'Die für den 26. bis 29. Mai an der Tufts University in Boston geplante <a href="https://music-encoding.org/conference/2020/" target="_blank">Music Encoding Conference</a> kann aufgrund der Pandemie nicht wie geplant stattfinden. Umso erfreulicher ist, dass das Organisationskomitee die Mühe auf sich genommen hat, kurzfristig die Veranstaltung in eine virtuelle umzuwandeln. Diese findet nun (in etwas reduzierter Form) an den geplanten Tagen statt, wobei aus Rücksicht auf die inzwischen zahlreichen Anmeldungen weltweit die Veranstaltungszeiten so gewählt wurden, dass ein möglichst bequemes Zuschalten möglich ist. Nähere Informationen zum Programm und zur Anmeldung sind unter: <a href="https://music-encoding.org/conference/2020/program/" target="_blank">https://music-encoding.org/conference/2020/program/</a> zu finden.'
+        }
+    },
     {
         date: '2019-11-28',
         en: {
