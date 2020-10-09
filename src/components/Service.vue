@@ -3,12 +3,12 @@
         <div class="columns">
             <div class="column col-10">{{ serviceName }}, <a :href="serviceURL" target="_blank">{{ serviceURL }}</a></div>
             <div class="column col-2">
-                <span v-if="serviceStatus === '-1'" class="dot grey" title="not loaded yet"></span>
-                <span v-else-if="serviceStatus === '0'" class="dot grey" title="paused"></span>
-                <span v-else-if="serviceStatus === '1'" class="dot grey" title="not checked yet"></span>
-                <span v-else-if="serviceStatus === '2'" class="dot green" title="up"></span>
-                <span v-else-if="serviceStatus === '8'" class="dot red" title="seems down"></span>
-                <span v-else-if="serviceStatus === '9'" class="dot red" title="down"></span>
+                <span v-if="serviceStatus === -1" class="dot grey" title="not loaded yet"></span>
+                <span v-if="serviceStatus === 0" class="dot grey" title="paused"></span>
+                <span v-if="serviceStatus === 1" class="dot grey" title="not checked yet"></span>
+                <span v-if="serviceStatus === 2" class="dot green" title="up"></span>
+                <span v-if="serviceStatus === 8" class="dot red" title="seems down"></span>
+                <span v-if="serviceStatus === 9" class="dot red" title="down"></span>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
                 return this.serviceData.url;
             },
             serviceStatus: function () {
-                if(this.serviceData == null) return "-1";
+                if(this.serviceData == null) return -1;
 
                 return this.serviceData.status;
                 /*
