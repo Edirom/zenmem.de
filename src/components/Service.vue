@@ -26,7 +26,8 @@
             return {
                 loading: false,
                 serviceData: null,
-                error: null
+                error: null,
+                intervalId: null
             }
         },
         computed: {
@@ -54,7 +55,10 @@
             }
         },
         created () {
-            this.fetchData()
+            this.intervalId = setTimeout(this.fetchData, 60000, this);
+        },
+        destroyed() {
+            clearInterval(this.intervalId);
         },
         methods: {
             fetchData () {
