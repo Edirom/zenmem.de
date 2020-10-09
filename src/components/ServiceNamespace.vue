@@ -2,7 +2,7 @@
     <div class=" column col-12">
         <div class="serviceNamespace">
             <h3>{{ serviceNamespace.namespace }}</h3>
-            <Service v-for="(service, index) in serviceNamespace.services"
+            <Service v-for="(service, index) in servicesFiltered"
                  :key="`service${index}`" :service="service"/>
         </div>
     </div>
@@ -24,7 +24,16 @@
                     return this.services
                 }
             },
-        }
+            selectedCluster: String,
+        },
+        computed: {
+            servicesFiltered: function () {
+                if(this.selectedCluster == null)
+                    return this.serviceNamespace.services;
+
+                return this.serviceNamespace.services.filter(service => service.cluster === this.selectedCluster);
+            },
+        },
     }
 </script>
 

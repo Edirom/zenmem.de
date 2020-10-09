@@ -6,10 +6,12 @@
                 <div class="column col-12">
                     <h1>{{ $t('services') }}</h1>
 
+                    <v-select v-model="selectedCluster" :options="clusters"/>
+
                     <div class="container grid-lg">
                         <div class="columns">
-                            <ServiceNamespace v-for="(serviceNS, index) in serviceNamespaces"
-                                     :key="`serviceNS${index}`" :serviceNamespace="serviceNS"/>
+                            <ServiceNamespace v-for="(serviceNS, index) in serviceNamespacesFiltered"
+                                     :key="`serviceNS${index}`" :serviceNamespace="serviceNS" :selectedCluster="selectedCluster"/>
                         </div>
                     </div>
                 </div>
@@ -27,8 +29,26 @@
         components: {ServiceNamespace},
         data() {
             return {
-                serviceNamespaces: serviceNamespaces
+                serviceNamespaces: serviceNamespaces,
+                clusters: ['Detmold 1', 'Detmold 2', 'Paderborn 1', 'Paderborn 2'],
+                selectedCluster: null
             };
+        },
+        computed: {
+            serviceNamespacesFiltered: function () {
+                if(this.selectedCluster == null)
+                    return this.serviceNamespaces;
+
+                var me = this;
+
+                return this.serviceNamespaces.filter(function(serviceNS) {
+                    for(var i = 0; i < serviceNS.services.length; i++) {
+                        if(serviceNS.services[i].cluster === me.selectedCluster) return true;
+                    }
+
+                    return false;
+                });
+            },
         },
     }
 </script>

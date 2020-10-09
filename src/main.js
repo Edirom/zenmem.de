@@ -12,6 +12,10 @@ import VueAxios from 'vue-axios'
 
 Vue.use(FlagIcon, VueAxios, axios);
 
+import vSelect from 'vue-select'
+Vue.component('v-select', vSelect)
+import 'vue-select/dist/vue-select.css';
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faAward, faTabletAlt,
   faGraduationCap, faProjectDiagram,
