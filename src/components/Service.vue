@@ -55,6 +55,7 @@
             }
         },
         created () {
+            this.fetchData();
             this.intervalId = setTimeout(this.fetchData, 60000, this);
         },
         destroyed() {
