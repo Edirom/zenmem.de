@@ -6,7 +6,11 @@ import store from './store/index.js'
 
 import i18n from '@/plugins/i18n';
 import FlagIcon from 'vue-flag-icon';
-Vue.use(FlagIcon);
+
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+Vue.use(FlagIcon, VueAxios, axios);
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faAward, faTabletAlt,

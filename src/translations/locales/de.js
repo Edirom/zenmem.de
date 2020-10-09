@@ -21,6 +21,8 @@ export default {
     resp_technical: 'Technical responsibility',
     privacy: 'Datenschutzerklärung',
     all_news: 'Alle Neuigkeiten im Archiv…',
+
+    services: 'Service-Monitor',
     
     
     first: '1.',
