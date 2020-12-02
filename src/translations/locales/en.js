@@ -22,6 +22,8 @@ export default {
     privacy: 'Privacy Policy',
     all_news: 'All news in archive…',
 
+    services: 'Service monitor',
+
     first: '1st',
     second: '2nd',
     third: '3rd',
