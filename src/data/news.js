@@ -16,7 +16,7 @@ export default [
         date: '2020-12-02',
         en: {
             title: 'NFDI4Culture: Job offer for sustainable software development and technical project management (TV-L 13, 100%, until 09-2025)',
-            desc: 'NFDI4Culture <a href="https://zenmem.de/jobs/Ausschreibung_NFDI4Culture_UPB_Kennziffer4474.pdf" target="_blank">seeks</a> a research associate for sustainable software development, which is also intended to support the project management and advise on technical issues. It is a full-time position (TV-L 13) until September 30, 2025.'
+            desc: 'NFDI4Culture <a href="https://zenmem.de/jobs/Ausschreibung_NFDI4Culture_UPB_Kennziffer4474_en.pdf" target="_blank">seeks</a> a research associate for sustainable software development, which is also intended to support the project management and advise on technical issues. It is a full-time position (TV-L 13) until September 30, 2025.'
         },
         de: {
             title: 'NFDI4Culture: Stelle für nachhaltige Softwareentwicklung und technische Projektleitung (TV-L 13, 100%, bis 09-2025)',
