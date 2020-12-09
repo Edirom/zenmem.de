@@ -13,6 +13,17 @@ export default [
     },
      */
     {
+        date: '2020-12-09',
+        en: {
+            title: 'NFDI4Culture: Job offer for sustainable software development and technical project management (TV-L 13, 100%, until 09-2025)',
+            desc: 'For the further development of the MEIGarage/OxGarage for both textual and musicological transformations, validations and enrichments of encodings the NFDI4Culture project is <a href="https://zenmem.de/jobs/Ausschreibung_NFDI4Culture_UPB_Kennziffer4483_en.pdf" target="_blank">looking for a collaborator</a>. It is a full-time position (TV-L 13) for 12 months. A further 50% employment for another 12 months is planned. Scope and period of time can be negotiated according to requirements (e.g. 18 months at 100% or three years at 50%). No knowledge of sheet music or other music-related skills are required.'
+        },
+        de: {
+            title: 'NFDI4Culture: Weiterentwicklung MEIGarage/OxGarage (TV-L 13, 100%, 12 Monate)',
+            desc: 'Für die Weiterentwicklung der MEIGarage/OxGarage für sowohl text- als auch musikwissenschaftliche Transformationen, Validierungen und Anreicherungen von Codierungen <a href="https://zenmem.de/jobs/Ausschreibung_NFDI4Culture_UPB_Kennziffer4483.pdf" target="_blank">sucht</a> das Projekt NFDI4Culture eine Mitarbeiterin oder einen Mitarbeiter. Es handelt sich um eine Vollzeitstelle (TV-L 13) für 12 Monate. Eine Weiterbeschäftigung mit 50% für weitere 12 Monate ist vorgesehen. Umfang und Zeitraum können je nach Bedarf ausgehandelt werden (z.B. 18 Monate mit 100% oder drei Jahre mit 50%). Es sind keine Notenkenntnisse oder andere musikbezogenen Kenntnisse notwendig.'
+        }
+    },
+    {
         date: '2020-12-02',
         en: {
             title: 'NFDI4Culture: Job offer for sustainable software development and technical project management (TV-L 13, 100%, until 09-2025)',
