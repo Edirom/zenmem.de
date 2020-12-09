@@ -88,7 +88,8 @@
 }
 
 a, a:hover, a:visited {
-  color: #335480;
+  color: #5287CC;
+  text-decoration: underline;
 }
 
 header {
@@ -101,6 +102,11 @@ header {
   height: 30px;
   text-align: center;
   padding-top: 3px;
+}
+
+.second-nav a {
+  color: #335480;
+  text-decoration: none;
 }
 
 .second-nav-entry {
