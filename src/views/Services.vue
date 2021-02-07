@@ -12,9 +12,6 @@
                     <span class="select-label">Filter by status:</span>
                     <v-select v-model="selectedStatus" :options="status"/>
 
-                    <span class="select-label">Find by name:</span>
-                    <input v-model="findByName" label="Service name" clearable/>
-
                     <div class="container grid-lg margin-top">
                         <div class="columns">
                             <Service v-for="(service, index) in servicesFiltered"
@@ -29,7 +26,6 @@
 
 <script>
     import Service from "../components/Service";
-    import serviceNamespaces from "../data/services";
     import axios from 'axios';
 
     export default {
@@ -38,30 +34,38 @@
         data() {
             return {
                 monitors: null,
-                serviceNamespaces: serviceNamespaces,
                 clusters: ['Detmold_1', 'Paderborn_1'],
                 status: ['Paused', 'Running', 'Down'],
                 selectedCluster: null,
                 selectedStatus: null,
-                findByName: "",
             };
         },
         created () {
-            //this.fetchData();
-            //this.intervalId = setInterval(this.fetchData, 60000, this);
+            this.fetchData();
+            this.intervalId = setInterval(this.fetchData, 60000, this);
         },
         destroyed() {
-            //clearInterval(this.intervalId);
+            clearInterval(this.intervalId);
         },
         computed: {
             servicesFiltered: function () {
-                if(this.selectedCluster == null)
-                    return this.serviceNamespaces.monitors;
+                if(this.selectedCluster == null && this.selectedStatus == null)
+                    return this.monitors;
 
-                var me = this;
+                const me = this;
 
-                return this.serviceNamespaces.monitors.filter(function(service) {
-                    if(service.cluster === me.selectedCluster) return true;
+                return this.monitors.filter(function(service) {
+
+                    let ret = me.selectedCluster == null || service.cluster === me.selectedCluster;
+
+                    if(me.selectedStatus == null)
+                        return ret;
+                    else if(me.selectedStatus === "Paused" && service.status === 0)
+                        return ret && true;
+                    else if(me.selectedStatus === "Running" && service.status === 2)
+                        return ret && true;
+                    else if(me.selectedStatus === "Down" && (service.status === 8 || service.status === 9))
+                        return ret && true;
 
                     return false;
                 });
