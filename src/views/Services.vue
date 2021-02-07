@@ -73,7 +73,7 @@
         },
         methods: {
             fetchData () {
-                axios.post("/monitors.json")
+                axios.get("/monitors.json")
                     .then(response => this.monitors = response.data.monitors)
                     .catch(e => {
                         this.errors.push(e)
