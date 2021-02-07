@@ -6,12 +6,19 @@
                 <div class="column col-12">
                     <h1>{{ $t('services') }}</h1>
 
+                    <span class="select-label">Filter by cluster:</span>
                     <v-select v-model="selectedCluster" :options="clusters"/>
 
-                    <div class="container grid-lg">
+                    <span class="select-label">Filter by status:</span>
+                    <v-select v-model="selectedStatus" :options="status"/>
+
+                    <span class="select-label">Find by name:</span>
+                    <input v-model="findByName" label="Service name" clearable/>
+
+                    <div class="container grid-lg margin-top">
                         <div class="columns">
-                            <ServiceNamespace v-for="(serviceNS, index) in serviceNamespacesFiltered"
-                                     :key="`serviceNS${index}`" :serviceNamespace="serviceNS" :selectedCluster="selectedCluster"/>
+                            <Service v-for="(service, index) in servicesFiltered"
+                                     :key="`service${index}`" :service="service"/>
                         </div>
                     </div>
                 </div>
@@ -21,35 +28,54 @@
 </template>
 
 <script>
-    import ServiceNamespace from "../components/ServiceNamespace";
+    import Service from "../components/Service";
     import serviceNamespaces from "../data/services";
+    import axios from 'axios';
 
     export default {
         name: "services",
-        components: {ServiceNamespace},
+        components: {Service},
         data() {
             return {
+                monitors: null,
                 serviceNamespaces: serviceNamespaces,
-                clusters: ['Detmold 1', 'Detmold 2', 'Paderborn 1', 'Paderborn 2'],
-                selectedCluster: null
+                clusters: ['Detmold_1', 'Paderborn_1'],
+                status: ['Paused', 'Running', 'Down'],
+                selectedCluster: null,
+                selectedStatus: null,
+                findByName: "",
             };
         },
+        created () {
+            //this.fetchData();
+            //this.intervalId = setInterval(this.fetchData, 60000, this);
+        },
+        destroyed() {
+            //clearInterval(this.intervalId);
+        },
         computed: {
-            serviceNamespacesFiltered: function () {
+            servicesFiltered: function () {
                 if(this.selectedCluster == null)
-                    return this.serviceNamespaces;
+                    return this.serviceNamespaces.monitors;
 
                 var me = this;
 
-                return this.serviceNamespaces.filter(function(serviceNS) {
-                    for(var i = 0; i < serviceNS.services.length; i++) {
-                        if(serviceNS.services[i].cluster === me.selectedCluster) return true;
-                    }
+                return this.serviceNamespaces.monitors.filter(function(service) {
+                    if(service.cluster === me.selectedCluster) return true;
 
                     return false;
                 });
             },
         },
+        methods: {
+            fetchData () {
+                axios.post("/monitors.json")
+                    .then(response => this.monitors = response.data.monitors)
+                    .catch(e => {
+                        this.errors.push(e)
+                    })
+            }
+        }
     }
 </script>
 
@@ -59,6 +85,11 @@
     }
 
     .margin-top {
-        margin-top: 5rem;
+        margin-top: 2rem;
+    }
+
+    .select-label {
+        font-size: 0.6rem;
+        color: grey;
     }
 </style>
