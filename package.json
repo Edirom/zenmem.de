@@ -8,17 +8,17 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-regular-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/vue-fontawesome": "^2.0.2",
     "axios": "^0.21.1",
-    "core-js": "^3.8.3",
+    "core-js": "^3.10.2",
     "spectre.css": "^0.5.9",
     "vue": "^2.6.12",
     "vue-axios": "^3.2.4",
     "vue-flag-icon": "^1.0.6",
-    "vue-i18n": "^8.22.4",
+    "vue-i18n": "^8.24.3",
     "vue-localstorage": "^0.6.2",
     "vue-router": "^3.5.1",
     "vue-select": "^3.11.2",
@@ -30,8 +30,8 @@
     "@vue/cli-plugin-router": "^4.5.12",
     "@vue/cli-service": "^4.5.12",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.23.0",
-    "eslint-plugin-vue": "^7.8.0",
+    "eslint": "^7.24.0",
+    "eslint-plugin-vue": "^7.9.0",
     "vue-template-compiler": "^2.6.12"
   }
 }
