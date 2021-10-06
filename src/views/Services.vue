@@ -34,7 +34,7 @@
         data() {
             return {
                 monitors: null,
-                clusters: ['Detmold_1', 'Paderborn_1'],
+                clusters: [],
                 status: ['Paused', 'Running', 'Down'],
                 selectedCluster: null,
                 selectedStatus: null,
@@ -74,7 +74,14 @@
         methods: {
             fetchData () {
                 axios.get("/monitors.json")
-                    .then(response => this.monitors = response.data.monitors)
+                    .then(response => {
+                        // get distinct values of cluster names from monitors.json
+                        let clustersSet = new Set();
+                        response.data.monitors.forEach(obj => clustersSet.add(obj.cluster));
+                        this.clusters = Array.from(clustersSet);
+                        // get monitors (as array) from monitors.json
+                        this.monitors = response.data.monitors;
+                    })
                     .catch(e => {
                         this.errors.push(e)
                     })
