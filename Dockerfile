@@ -15,7 +15,8 @@ RUN npm install \
 # 2. Step
 
 FROM nginx:alpine
-LABEL maintainer="Daniel Röwenstrunk for ZenMEM"
+LABEL maintainer="Daniel Röwenstrunk for ZenMEM" \
+      org.opencontainers.image.source="https://github.com/Edirom/zenmem.de"
 
 COPY nginx_config/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/dist/ /usr/share/nginx/html/

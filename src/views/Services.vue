@@ -6,12 +6,16 @@
                 <div class="column col-12">
                     <h1>{{ $t('services') }}</h1>
 
+                    <span class="select-label">Filter by cluster:</span>
                     <v-select v-model="selectedCluster" :options="clusters"/>
 
-                    <div class="container grid-lg">
+                    <span class="select-label">Filter by status:</span>
+                    <v-select v-model="selectedStatus" :options="status"/>
+
+                    <div class="container grid-lg margin-top">
                         <div class="columns">
-                            <ServiceNamespace v-for="(serviceNS, index) in serviceNamespacesFiltered"
-                                     :key="`serviceNS${index}`" :serviceNamespace="serviceNS" :selectedCluster="selectedCluster"/>
+                            <Service v-for="(service, index) in servicesFiltered"
+                                     :key="`service${index}`" :service="service"/>
                         </div>
                     </div>
                 </div>
@@ -21,35 +25,68 @@
 </template>
 
 <script>
-    import ServiceNamespace from "../components/ServiceNamespace";
-    import serviceNamespaces from "../data/services";
+    import Service from "../components/Service";
+    import axios from 'axios';
 
     export default {
         name: "services",
-        components: {ServiceNamespace},
+        components: {Service},
         data() {
             return {
-                serviceNamespaces: serviceNamespaces,
-                clusters: ['Detmold 1', 'Detmold 2', 'Paderborn 1', 'Paderborn 2'],
-                selectedCluster: null
+                monitors: null,
+                clusters: [],
+                status: ['Paused', 'Running', 'Down'],
+                selectedCluster: null,
+                selectedStatus: null,
             };
         },
+        created () {
+            this.fetchData();
+            this.intervalId = setInterval(this.fetchData, 60000, this);
+        },
+        destroyed() {
+            clearInterval(this.intervalId);
+        },
         computed: {
-            serviceNamespacesFiltered: function () {
-                if(this.selectedCluster == null)
-                    return this.serviceNamespaces;
+            servicesFiltered: function () {
+                if(this.selectedCluster == null && this.selectedStatus == null)
+                    return this.monitors;
 
-                var me = this;
+                const me = this;
 
-                return this.serviceNamespaces.filter(function(serviceNS) {
-                    for(var i = 0; i < serviceNS.services.length; i++) {
-                        if(serviceNS.services[i].cluster === me.selectedCluster) return true;
-                    }
+                return this.monitors.filter(function(service) {
+
+                    let ret = me.selectedCluster == null || service.cluster === me.selectedCluster;
+
+                    if(me.selectedStatus == null)
+                        return ret;
+                    else if(me.selectedStatus === "Paused" && service.status === 0)
+                        return ret && true;
+                    else if(me.selectedStatus === "Running" && service.status === 2)
+                        return ret && true;
+                    else if(me.selectedStatus === "Down" && (service.status === 8 || service.status === 9))
+                        return ret && true;
 
                     return false;
                 });
             },
         },
+        methods: {
+            fetchData () {
+                axios.get("/monitors.json")
+                    .then(response => {
+                        // get distinct values of cluster names from monitors.json
+                        let clustersSet = new Set();
+                        response.data.monitors.forEach(obj => clustersSet.add(obj.cluster));
+                        this.clusters = Array.from(clustersSet);
+                        // get monitors (as array) from monitors.json
+                        this.monitors = response.data.monitors;
+                    })
+                    .catch(e => {
+                        this.errors.push(e)
+                    })
+            }
+        }
     }
 </script>
 
@@ -59,6 +96,11 @@
     }
 
     .margin-top {
-        margin-top: 5rem;
+        margin-top: 2rem;
+    }
+
+    .select-label {
+        font-size: 0.6rem;
+        color: grey;
     }
 </style>

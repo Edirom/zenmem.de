@@ -7,6 +7,7 @@
       <section class="navbar-section">
         <router-link to="/about">{{ $t('about') }}</router-link>
         <router-link to="/contact">{{ $t('contact') }}</router-link>
+        <router-link to="/services">{{ $t('services') }}</router-link>
       </section>
       <section class="navbar-section">
         <!--<div class="input-group input-inline">
