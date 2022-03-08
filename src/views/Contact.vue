@@ -6,7 +6,7 @@
                 <div class="column col-12">
                     <h1>{{ $t('contact') }}</h1>
                 </div>
-                <div class="column col-6 col-md-6 col-sm-12 col-xs-12">
+                <!--<div class="column col-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="contact card">
                         <div class="card-image">
                             <img src="/pix/veit.jpg" alt="Prof. Dr. Joachim Veit" class="img-responsive">
@@ -19,10 +19,10 @@
                             <p v-html="$t('coordinator_contact')"></p>
                         </div>
                         <div class="card-footer">
-                            <!--Social Media-->
+                            <!-/-Social Media-/->
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <div class="column col-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="contact card">
                         <div class="card-image">

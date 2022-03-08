@@ -6,19 +6,20 @@
                 <div class="column col-12 margin-bottom">
                     <h1>{{ $t('imprint') }}</h1>
                 </div>
-                <div class="column col-6 col-md-12">
+                <!--<div class="column col-6 col-md-12">
                     <h2>{{ $t('resp_content') }}</h2>
                     <h4>Prof. Dr. Joachim Veit</h4><p>Universität Paderborn<br/>Musikwissenschaftliches Seminar Detmold/Paderborn</p>
                     <p v-html="$t('coordinator_contact')"></p>
-                </div>
+                </div>-->
                 <div class="column col-6 col-md-12">
+                  <h2>{{ $t('resp_content') }}</h2>
                     <h4 style="margin-top: 2.7rem;">Dipl. Wirt.-Inf. Daniel Röwenstrunk</h4><p>Universität Paderborn<br/>Musikwissenschaftliches Seminar Detmold/Paderborn</p>
                     <p v-html="$t('project_manager_contact')"></p>
                 </div>
                 <div class="column col-12 margin-top">
                     <h2>{{ $t('resp_technical') }}</h2>
                     <p>{{ $t('ZenMEM') }}</p>
-                    <p>Hornsche Strasse 39<br/>32756 Detmold</p>
+                    <p>Fürstenallee 11<br/>33102 Paderborn</p>
                 </div>
                 <div class="column col-12 margin-top">
                     <h2>{{ $t('privacy') }}</h2>
