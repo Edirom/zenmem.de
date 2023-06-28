@@ -97,6 +97,63 @@ export default [
         logo: '',
         ends: 2026,
     },
+    {
+        title: 'Das Handwerk des Verlegers ',
+        de: {
+            subtitle: '',
+            desc: 'Laufzeit: 2021–2023<br/>Förderer: <a href="https://www.fritz-thyssen-stiftung.de/" target="_blank">Fritz Thyssen Stiftung</a>',
+        },
+        en: {
+            subtitle: '',
+            desc: 'Funding period: 2021–2023<br/>Funding agency: <a href="https://www.fritz-thyssen-stiftung.de/" target="_blank">Fritz Thyssen Foundation</a>',
+        },
+        URL: 'https://hdv-beethoven.de/',
+        logo: '',
+        ends: 2023,
+    },
+    {
+        title: 'Erich Wolfgang Korngold Werkausgabe',
+        de: {
+            subtitle: '',
+            desc: 'Laufzeit: 2021–2045<br/>Förderer: <a href="https://www.adwmainz.de/" target="_blank">Akademie der Wissenschaften und der Literatur | Mainz</a> und <a href="https://www.bbaw.de/" target="_blank">Berlin-Brandenburgische Akademie der Wissenschaften</a>',
+        },
+        en: {
+            subtitle: '',
+            desc: 'Funding period: 2021–2045<br/>Funding agency: <a href="https://www.adwmainz.de/" target="_blank">Academy of Sciences and Literature | Mainz</a> und <a href="https://www.bbaw.de/" target="_blank">Berlin-Brandenburg Academy of Sciences and Humanities</a>',
+        },
+        URL: 'https://www.adwmainz.de/projekte/erich-wolfgang-korngold-werkausgabe/',
+        logo: '',
+        ends: 2045,
+    },
+    {
+        title: 'KreativInstitut.Ostwestfalen-Lippe ',
+        de: {
+            subtitle: '',
+            desc: 'Laufzeit: 2022–2026<br/>Förderer: <a href="https://www.wirtschaft.nrw/ministerium" target="_blank">Ministerium für Wirtschaft, Industrie, Klimaschutz und Energie des Landes Nordrhein-Westfalen</a>',
+        },
+        en: {
+            subtitle: '',
+            desc: 'Funding period: 2022–2026<br/>Funding agency: <a href="https://www.wirtschaft.nrw/ministerium" target="_blank">Ministry of Economic Affairs, Industry, Climate Action and Energy of the State of North Rhine-Westphalia</a>',
+        },
+        URL: 'https://kreativ.institute/',
+        logo: '',
+        ends: 2026,
+    },
+    {
+        title: 'Text+',
+        de: {
+            subtitle: 'Sprach- und textbasierte Forschungsdateninfrastruktur ',
+            desc: 'Laufzeit: 2021–2026<br/>Förderer: <a href="" target="_blank"></a>',
+        },
+        en: {
+            subtitle: 'Sprach- und textbasierte Forschungsdateninfrastruktur ',
+            desc: 'Funding period: 2021–2026<br/>Funding agency: <a href="" target="_blank"></a>',
+        },
+        URL: 'https://www.text-plus.org',
+        logo: '',
+        ends: 2026,
+    },
+    
 ];
 
 /*

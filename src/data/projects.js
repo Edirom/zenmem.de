@@ -111,6 +111,48 @@ export default [
         logo: '/project-pix/nfdi4culture-logo.png',
         ends: 2020,
     },
+    {
+        title: 'DFG-Viewer für musikalische Quellen ',
+        de: {
+            subtitle: '',
+            desc: 'Laufzeit: 2021–2023<br/>Förderer: <a href="https://www.dfg.de/" target="_blank">Deutsche Forschungsgemeinschaft</a>',
+        },
+        en: {
+            subtitle: '',
+            desc: 'Funding period: 2021–2023<br/>Funding agency: <a href="https://www.dfg.de/" target="_blank">German Research Foundation</a>',
+        },
+        URL: 'https://www.muwi-detmold-paderborn.de/forschung/dfg-viewer-fuer-musikalische-quellen',
+        logo: '',
+        ends: 2023,
+    },
+    {
+        title: 'Henze Digital',
+        de: {
+            subtitle: 'Hans Werner Henzes künstlerisches Netzwerk',
+            desc: 'Laufzeit: 2021–2024<br/>Förderer: <a href="https://www.dfg.de/" target="_blank">Deutsche Forschungsgemeinschaft</a>',
+        },
+        en: {
+            subtitle: 'Hans Werner Henzes künstlerisches Netzwerk',
+            desc: 'Funding period: 2021–2024<br/>Funding agency: <a href="https://www.dfg.de/" target="_blank">German Research Foundation</a>',
+        },
+        URL: 'https://henze-digital.zenmem.de/',
+        logo: 'https://edirom.de/assets/img/hendi.png',
+        ends: 2024,
+    },
+    {
+        title: 'NFDI4Culture',
+        de: {
+            subtitle: 'Konsortium für Forschungsdaten materieller und immaterieller Kulturgüter',
+            desc: 'Laufzeit: 2020–2025<br/>Förderer: <a href="https://www.dfg.de/" target="_blank">Deutsche Forschungsgemeinschaft</a>',
+        },
+        en: {
+            subtitle: 'Consortium for Research Data on Material and Immaterial Cultural Heritage',
+            desc: 'Funding period: 2020–2025<br/>Funding agency: <a href="https://www.dfg.de/" target="_blank">German Research Foundation</a>',
+        },
+        URL: 'https://nfdi4culture.de/',
+        logo: 'https://nfdi4culture.de/typo3conf/ext/culture_portal/Resources/Public/Build/images/n4c-logo-black.4b9cb10d.svg',
+        ends: 2025,
+    },
 ];
 
 /*
