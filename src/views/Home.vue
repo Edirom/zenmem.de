@@ -9,7 +9,7 @@
           <h1>{{ $t('ZenMEM') }}</h1>
           <p v-html="$t('home_text')"></p>
         </div>
-        <div class="column col-6 col-md-6 col-sm-12 col-xs-12 newsColumn">
+        <!--<div class="column col-6 col-md-6 col-sm-12 col-xs-12 newsColumn">
           <div class="news">
             <h3>{{ $t('news') }}</h3>
             <div class="tile " v-for="(news, index) in getFirstNews()"
@@ -26,7 +26,7 @@
               <p><a href="/news">{{ $t('all_news') }}</a></p>
             </div>
           </div>
-        </div>
+        </div>-->
         <div class="column col-6 col-md-6 col-sm-12 col-xs-12 twitterColumn">
           <div class="twitter">
             <a class="twitter-timeline" data-height="400" data-dnt="true" data-link-color="#335480" href="https://twitter.com/roewenstrunk/lists/zenmem?ref_src=twsrc%5Etfw">A Twitter List by roewenstrunk</a>
