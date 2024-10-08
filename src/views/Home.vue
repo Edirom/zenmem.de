@@ -27,11 +27,6 @@
             </div>
           </div>
         </div>-->
-        <div class="column col-6 col-md-6 col-sm-12 col-xs-12 twitterColumn">
-          <div class="twitter">
-            <a class="twitter-timeline" data-height="400" data-dnt="true" data-link-color="#335480" href="https://twitter.com/roewenstrunk/lists/zenmem?ref_src=twsrc%5Etfw">A Twitter List by roewenstrunk</a>
-          </div>
-        </div>
       </div>
     </div>
   </div>
