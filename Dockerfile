@@ -4,12 +4,12 @@
 # 1. build the website
 # 2. run apache with php
 #########################
-FROM node:lts as builder
+FROM node:lts AS builder
 
 WORKDIR /app
 COPY . .
 
-RUN npm install \
+RUN npm install --force \
     && npm run build
 
 # 2. Step
